@@ -8,7 +8,7 @@ google:
     - scope: "https://www.googleapis.com/auth/spreadsheets.readonly"
 spreadsheet:
   # идентификатор документа google
-  id: "1KWUtZDh8-1C-QPfLrUN0jTau2HzQR68ZpFM1xlnRgHA"
+  id: "google-doc-id"
   # какую область документа экспортировать - здесь стоит указать название листа
   range: "Лист1"
 export:
