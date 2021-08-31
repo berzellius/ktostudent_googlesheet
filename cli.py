@@ -10,7 +10,7 @@ from schemas import CsvExportSchema
 
 def load_settings(file_path='settings.yaml'):
     with open(file_path) as settings_file:
-        return yaml.load(settings_file)
+        return yaml.load(settings_file, Loader=yaml.CLoader)
 
 
 def load_data(credentials_file, scopes, spreadsheet_id, range):
@@ -39,7 +39,7 @@ def export_to_csv(csv_path, data_header, data, schema):
         csv_writer = csv.DictWriter(csv_file, schema.fields)
         csv_writer.writerow(dict(zip(
             schema.fields,
-            schema.fields
+            schema.fields,
         )))
         for row in data:
             row_data = dict(zip(data_header, row))
