@@ -14,5 +14,5 @@ spreadsheet:
 export:
   # какая папка должна создаваться для csv файла
   secret_url_part: "secret_dir"
-  # навзание csv файла
+  # название csv файла
   csv_file_name: students.csv
