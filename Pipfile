@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+"flake8" = "*"
+ipdb = "*"
+rope = "*"
+pytest = "*"
+"pep8" = "*"
+pycodestyle = "*"
+pylint = "*"
+yapf = "*"
+"autopep8" = "*"
+pre-commit = "*"
+
+[packages]
+google-api-python-client = "*"
+oauth2client = "*"
+marshmallow = "*"
+pyyaml = "*"
+
+[requires]
+python_version = "3"
